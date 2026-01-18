@@ -1,0 +1,12 @@
+[package]
+name = "wp_user_digger"
+version = "0.1.0"
+edition = "2021"
+description = "Enumerate WordPress users via author redirect (internal audit tool)"
+license = "MIT"
+
+[dependencies]
+clap = { version = "4", features = ["derive"] }
+reqwest = { version = "0.11", features = ["blocking", "rustls-tls"] }
+regex = "1"
+
