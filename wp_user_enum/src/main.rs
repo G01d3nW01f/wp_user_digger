@@ -69,7 +69,8 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
                 }
             }
             Err(_) => {
-                // 通信エラーは黙って継続（監査ツール向け挙動）
+                
+                // connection error will silently through (because for audit)
             }
         }
 
